@@ -1,1 +1,1 @@
-# JS-Magic-Maker
+#JS-Magic-Maker is a JavaScript project aimed at developing dynamic and interactive web applications. This repository contains the core code and resources necessary for building seamless and engaging user experiences JS-Magic-Maker
