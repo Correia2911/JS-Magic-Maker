@@ -1,0 +1,80 @@
+<!--index.html project_6-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project6_ternary_operators</title>
+        <style>
+            /* General body styling */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            /* Heading styling */
+            h1 {
+                color: #239b77;
+                text-align: center;
+            }
+
+            /* Input field styling */
+            input[type="number"] {
+                display: block;
+                margin: 10px auto;
+                padding: 10px;
+                width: 50%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            /* Button styling */
+            button {
+                display: block;
+                margin: 10px auto;
+                padding: 10px 20px;
+                background-color: #239b77;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #1e8a68;
+            }
+
+            /* Paragraph styling */
+            p {
+                text-align: center;
+                font-size: 18px;
+                color: #555;
+            }
+
+            /* Result and output styling */
+            #result, #output {
+                font-weight: bold;
+                color: #26744f;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Ternary Operators -->
+        <h1>Project6_ternary_operators</h1>
+        <p>Enter your height and click the button to check if you can ride:</p>
+        <input type="number" id="demo" placeholder="Enter your height"> <!-- Input field -->
+        <p id="result"></p> <!-- Result will be displayed here -->
+        <button onclick="Ride_Function()">Check if you can ride</button>
+
+        <!-- Nested Functions -->
+        <p id="output"></p> <!-- Output for nested function -->
+
+        <!-- Load JavaScript at the end of the body -->
+        <script src="JS/main.js"></script>
+    </body>
+</html>
