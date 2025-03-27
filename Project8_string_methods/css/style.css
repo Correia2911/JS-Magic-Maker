@@ -1,0 +1,55 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Heading styling */
+h1 {
+    color: #0c1599;
+    text-align: center;
+}
+
+/* Input field styling */
+input[type="number"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #a8b90f;
+    color: rgb(14, 179, 190);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e8a68;
+}
+
+/* Paragraph styling */
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #c50b43;
+}
+
+/* Result and output styling */
+#result, #output {
+    font-weight: bold;
+    color: #2b09a5;
+}
