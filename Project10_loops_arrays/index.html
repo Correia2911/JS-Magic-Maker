@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+    <!-- Link to the JavaScript file -->
+    <script src="js/main.js" defer></script>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Heading styling */
+        h1, h2 {
+            color: #239b77;
+            text-align: center;
+        }
+
+        /* Paragraph styling */
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Button styling */
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #239b77;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e8a68;
+        }
+
+        /* Output styling */
+        #arrayOutput, #delayOutput, #Constant, #demo, #ObjectOutput {
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main heading -->
+    <h1>JavaScript Loops</h1>
+    <p>Open the console to see the output.</p>
+
+    <!-- Section for For Loops -->
+    <h1>JavaScript For Loops</h1>
+    <p>Check the console for the loop output!</p>
+
+    <!-- Section for Arrays and Functions -->
+    <h1>Using Arrays and Functions</h1>
+    <p id="arrayOutput"></p> <!-- Placeholder for displaying all vehicles immediately -->
+
+    <!-- Section for Delayed Output -->
+    <h1>Log Vehicles with Delay</h1>
+    <button onclick="logVehiclesWithDelay()">Log Vehicles with Delay</button> <!-- Button to trigger the function -->
+    <p id="delayOutput"></p> <!-- Placeholder for displaying vehicles with delay -->
+
+    <!-- Section for Const Keyword -->
+    <h1>Using Const Keyword</h1> 
+    <p id="Constant"></p> <!-- Placeholder for displaying constant object properties -->
+
+    <!-- Section for Let Keyword -->
+    <h1>JavaScript Let Keyword</h1>
+    <p>Open the console in your browser's developer tools to see the output of the code.</p> 
+
+    <!-- Section for Return Statement -->
+    <h1>JavaScript Statements</h1>
+    <h2>The return Statement</h2>
+    <p>Call a function that returns the value of PI:</p>
+    <p id="demo"></p> <!-- Placeholder for displaying the return value of a function -->
+
+    <!-- Section for Object Assignment -->
+    <h1>Object Assignment</h1>
+    <p id="ObjectOutput"></p> <!-- Placeholder for displaying object properties -->
+    <button onclick="displayGreeting()">Click me to see the Greeting</button> <!-- Button to trigger object function -->
+</body>
+</html>
