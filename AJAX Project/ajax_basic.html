@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic AJAX Demo</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body>
+    <div class="main">
+        <h2>Get The Latest Content:</h2>
+        <div class="content" id="content"> <!-- This div will display the AJAX-loaded content -->
+            <input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/> <!-- Button triggers the AJAX request -->
+        </div>
+    </div>
+    <script type="text/javascript">
+        // Function to send the AJAX request
+        function getContent() {
+            // Creates a new XMLHttpRequest object
+            var ajax = new XMLHttpRequest();
+
+            // Prepares the AJAX request to fetch content.html
+            ajax.open('GET', 'content.html', true);
+
+            // Defines a callback function to handle the server response
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 4) { // Request is complete
+                    if (ajax.status == 200) { // Successful response
+                        // Updates the content div with the server response
+                        document.getElementById('content').innerHTML = ajax.responseText;
+
+                        // Hides the button after successful content load
+                        document.getElementById('btn_content').style.display = 'none';
+                    } else {
+                        // Displays an error message if the request fails
+                        document.getElementById('content').innerHTML = '<p style="color: red;">Failed to load content. Please try again later.</p>';
+                    }
+                }
+            };
+
+            // Sends the AJAX request
+            ajax.send();
+        }
+    </script>
+</body>
+</html>
